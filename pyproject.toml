@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rainbow_logging"
+version = "0.0.1"
+description = "🌈 A flexible and minimal Python logging utility that adds colorful, readable log output to your terminal."
+readme = "README.md"
+license = { text = "MIT" }
+keywords = [
+    "python",
+    "logging",
+    "color"
+]
+authors = [
+    { name = "spring", email = "springnode@gmail.com" }
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "pytz"
+]
+[project.urls]
+Homepage = "https://github.com/NLPOptimize/rainbow_logging"
+Issues = "https://github.com/NLPOptimize/rainbow_logging/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["rainbow_logging"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.pyc", "*.pyo", "*.so", "*.pyd", "__pycache__"]
